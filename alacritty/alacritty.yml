@@ -60,10 +60,6 @@ colors:
     cyan: '#a4ffff'
     white: '#ffffff'
 
-window:
-    opacity: 0.5
-
-
 font:
   normal:
     family: ubuntu mono nerd font

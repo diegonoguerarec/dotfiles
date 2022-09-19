@@ -110,6 +110,9 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     #Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
+    # Restore a floating window   
+    Key([mod], "f", lazy.window.toggle_floating()),
+
 
     # Special keys
 
@@ -185,6 +188,7 @@ screens = [
         top=bar.Bar(
             [
                 widget.GroupBox(),
+		widget.Spacer(length = 5),
                 # widget.Prompt(),
                 widget.WindowName(fmt = '{}'),
                 widget.Chord(
